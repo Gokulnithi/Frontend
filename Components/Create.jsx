@@ -22,7 +22,7 @@ const Create = () => {
         })
     }
   return (
-    <div>
+    <div className='cont'>
       <form action="">
         <input type="text"  onChange={(e)=>{setdata({
             n:e.target.value,
