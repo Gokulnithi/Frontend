@@ -1,0 +1,88 @@
+.form{
+    width: 100%;
+    height: 70%;
+    background-color: pink;
+    background-color: rgba(255, 255, 255, 0.01);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    backdrop-filter: blur(20px);
+}
+
+.form form{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    /* padding: 5px; */
+    background-color: red;
+    margin: 15px;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.a1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.a2{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+label{
+    width: max-content;
+    height: max-content;
+}
+input,textarea{
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 0.5s all;
+}
+input:focus,textarea:focus,select:focus{
+    border: 2px solid red;
+    outline: none;
+}
+fieldset{
+    padding: 10px 15px;
+}
+input:hover,textarea:hover,select:hover{
+    border: 2px solid red;
+}
+select{
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 0.5s all;
+}
+.val{
+    margin: 15px 0px;
+}
+.FB{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
