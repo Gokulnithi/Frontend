@@ -63,7 +63,7 @@ const User = () => {
                         }} /></td>):<td>{users.age}</td>}
                         <td>
                             <div className="btns">
-                            <button className='green' onClick={()=>{handleUpdateonPage(users._id,users.name)}}>{update?'Save':'Update'}</button> 
+                           {editing == users.name? ( <button className='green' onClick={()=>{handleUpdateonPage(users._id,users.name)}}>Save</button>): <button className='green' onClick={()=>{handleUpdateonPage(users._id,users.name)}}>Update</button>} 
                         <button className='red' onClick={()=>{handleDelete(users._id)}}>Delete</button>
                             </div>
                         </td>
